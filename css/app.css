@@ -5,19 +5,19 @@ nav{
   border: 1px solid red;
 }
 
-#indexpage .mainnavigation li:nth-child(1){
+#indexpage .subnavigation li:nth-child(1){
   background-color: yellow;
 
 }
-#portfoliopage .mainnavigation li:nth-child(2){
+#portfoliopage .subnavigation li:nth-child(2){
   background-color: blue;
 
 }
-#aboutpage .mainnavigation li:nth-child(3){
+#aboutpage .subnavigation li:nth-child(3){
   background-color: green;
 
 }
-#contactpage .mainnavigation li:nth-child(4){
+#contactpage .subnavigation li:nth-child(4){
   background-color: orange;
 
 }
