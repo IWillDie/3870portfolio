@@ -1,9 +1,14 @@
 /*
 selector {property:value;}
 */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
 nav{
   border: 1px solid red;
 }
+
+
+
 
 #indexpage .subnavigation li:nth-child(1){
   background-color: yellow;
@@ -19,5 +24,37 @@ nav{
 }
 #contactpage .subnavigation li:nth-child(4){
   background-color: orange;
+
+}
+
+.target{
+  color: blue;
+  font-style: red;
+}
+
+.orbit-slide{
+  /*margin: 10px;*/
+}
+
+body{
+  /*background: repeating-linear-gradient(red, yellow 10%, green 20%);*/
+  font-family: 'Raleway', 'Arial', sans-serif;
+  background-image: url('../images/paw_icon_2.jpg');
+
+}
+
+/*feedback page*/
+
+.tealbg {background-color: teal;
+
+}
+
+/* splash page*/
+.bigPaw{
+  margin: 20x;
+  padding: 20px;
+  position: fixed;
+  background-image: url(../images/paw_icon_big.svg);
+  background-repeat: no-repeat;
 
 }
