@@ -7,65 +7,86 @@
     <title>Peter Chang Webdesign Service Portfolio: Homepage</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
+
+    <!-- <meta http-equiv="refresh" content="600"> -->
+
   </head>
   <body id="indexpage">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <!--start of main navigation-->
         <nav class="mainnavigation cell small-12">
-          <h1>Logo</h1>
-          <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>About</li>
+          <h1>
+            <div>
+              <div class="large-3 small-12">
+                <a href="https://www.youtube.com/user/ULTIMATEWE">
+                <img id="logo1" src="https://yt3.ggpht.com/-nc45cOWmu0Y/AAAAAAAAAAI/AAAAAAAAAAA/P3l44ij0SJ0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                </a>
+              </div>
+              <div class="large-9 small-12">
+
+                Peter Chang: Graphic Designer
+
+              </div>
+            </div>
+          </h1>
+          <ul class="menu dropdown" data-dropdown-menu>
+            <li><a href="#">Menu</a>
+            <ul class="menu subnavigation">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+
+            </ul>
+            <li>
           </ul>
         </nav>
         <!-- end of main navigation -->
-        <!--test menu-->
-        <!--
-        <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Site Title</li>
-      <li>
-        <a href="#">One</a>
-        <ul class="menu vertical">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-</div>-->
-        <!-- end test menu-->
-
-<div class="bigphoto cell small-12">
-bigphoto
-</div>
-<div class="bigheadline cell small-12">
-bigheadline
-</div>
-<div class="testimonial t1 cell small-12 large-6">
-testitmonial t1
-</div>
-<div class="testimonial t2 cell small-12 large-6">
-testimonial t2
-</div>
-<footer class="cell small-12">
-footer
-</footer>
 
         <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+          <h1>Welcome to My Portfolio Website</h1>
         </div>
+
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="images/Dolbi_smile_web.jpg" alt="Dolbi smiling">
+          <figcaption class="orbit-caption">This is Dolbi, a rat-terrier mut, with a lot of energy.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="images/Dolbi_tongue_out_web.jpg" alt="Dolbi sticking her tongue out">
+          <figcaption class="orbit-caption">Dolbi is very playful!</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="images/Koa_stare_web.jpg" alt="Koa staring at food">
+          <figcaption class="orbit-caption">This is Koa, a Chipom (Chihuahua Pomeranian), who is often unimpressed.</figcaption>
+        </figure>
+      </li>
+
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+  </nav>
+</div>
 
       </div>
     </div><!-- closes the container-->
