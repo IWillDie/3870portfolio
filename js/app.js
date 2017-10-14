@@ -9,21 +9,12 @@ Do NOT Touch Above
 // var nSeconds = date1.getMilliseconds();
 // document.getElementById("mseconds1").innerHTML = nSeconds;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 59a9c457d32449823d16512264f52b1c5eed871e
 // refresh timer 10min
 setTimeout(function(){
    window.location.reload(1);
 }, 60000); //why is this in ms
 
 // Rotating "circle" for splash page
-<<<<<<< HEAD
-=======
-=======
->>>>>>> abba5ddda287a6aabc4be7c2b773a1e67c98173c
->>>>>>> 59a9c457d32449823d16512264f52b1c5eed871e
 // center points
 var centerx = $(window).width() / 2
 var centery = $(window).height() / 2;
