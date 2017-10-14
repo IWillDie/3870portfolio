@@ -1,6 +1,7 @@
 /*
 selector {property:value;}
 */
+<<<<<<< HEAD
 
 h1{
   font-family: 'Raleway';
@@ -19,6 +20,9 @@ div{
   border-radius: 50%;
 }
 /*logo end*/
+=======
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+>>>>>>> abba5ddda287a6aabc4be7c2b773a1e67c98173c
 
 nav{
   border: 1px solid red;
@@ -28,6 +32,7 @@ nav{
 
 
 #indexpage .subnavigation li:nth-child(1){
+<<<<<<< HEAD
   background-color: yellow;
 
 }
@@ -85,5 +90,54 @@ body{
     background: rgb(87, 181, 87);
     margin: 10px;
     padding: 10px;
+=======
+  background-color: yellow;
+
+}
+#portfoliopage .subnavigation li:nth-child(2){
+  background-color: blue;
+
+}
+#aboutpage .subnavigation li:nth-child(3){
+  background-color: green;
+
+}
+#contactpage .subnavigation li:nth-child(4){
+  background-color: orange;
+>>>>>>> abba5ddda287a6aabc4be7c2b773a1e67c98173c
+
+}
+
+.target{
+  color: blue;
+  font-style: red;
+}
+
+.orbit-slide{
+  /*margin: 10px;*/
+}
+
+body{
+  /*background: repeating-linear-gradient(red, yellow 10%, green 20%);*/
+  font-family: 'Raleway', 'Arial', sans-serif;
+  background-image: url('../images/paw_icon_2.jpg');
+
+}
+
+/*feedback page*/
+
+.tealbg {background-color: teal;
+
+}
+
+/* splash page*/
+.bigPaw{
+  margin: 20x;
+  padding: 20px;
+  position: fixed;
+  background-image: url(../images/paw_icon_big.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
 
 }

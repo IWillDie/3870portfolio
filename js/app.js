@@ -9,12 +9,15 @@ Do NOT Touch Above
 // var nSeconds = date1.getMilliseconds();
 // document.getElementById("mseconds1").innerHTML = nSeconds;
 
+<<<<<<< HEAD
 // refresh timer 10min
 setTimeout(function(){
    window.location.reload(1);
 }, 60000); //why is this in ms
 
 // Rotating "circle" for splash page
+=======
+>>>>>>> abba5ddda287a6aabc4be7c2b773a1e67c98173c
 // center points
 var centerx = $(window).width() / 2
 var centery = $(window).height() / 2;
