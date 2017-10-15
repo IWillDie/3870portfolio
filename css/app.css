@@ -27,7 +27,15 @@ h2{
   border: 1px solid red;
 }*/
 
+.menuButton{
+  border: solid 2px red;
 
+
+}
+
+/*li{
+  font-style:
+}*/
 
 
 #indexpage .subnavigation li:nth-child(1){
@@ -73,6 +81,7 @@ form{
 }
 
 
+
 /* splash page*/
 .bigPaw{
   margin: 20x;
@@ -83,6 +92,11 @@ form{
   width: 100%;
   text-align: center;
 
+}
+
+/*index page*/
+.introText{
+  font-style: 20px;
 }
 
 /*about page*/
