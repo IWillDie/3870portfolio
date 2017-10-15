@@ -6,10 +6,13 @@ h1{
   font-family: 'Raleway';
 }
 
-/*boxing*/
-div{
-  border: 1px solid red;
+h2{
+  font-family: 'Roboto';
 }
+/*target-boxing*/
+/*div{
+  border: 1px solid red;
+}*/
 
 /*logo*/
 #logo1{
@@ -80,10 +83,13 @@ body{
 
 /*about page*/
 .aboutBorder{
-    font-size: 20px;
-    border: 10px white;
+    font-style: 20px white;
+
+    outline: 1px solid rgb(87, 181, 87);
+    border: 7px solid white;
+
     background: rgb(87, 181, 87);
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
 
 }
