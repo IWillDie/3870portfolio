@@ -12,7 +12,12 @@ Do NOT Touch Above
 // refresh timer 10min
 setTimeout(function(){
    window.location.reload(1);
-}, 60000); //why is this in ms
+}, 150000); //why is this in ms
+
+// var element = document.getElementByClass('bigPaw');
+// element.style.opacity = "0.99";
+// element.style.filter  = 'alpha(opacity=90)';
+
 
 // Rotating "circle" for splash page
 // center points

@@ -67,7 +67,7 @@ h2{
 body{
   /*background: repeating-linear-gradient(red, yellow 10%, green 20%);*/
   font-family: 'Roboto', 'Arial', sans-serif;
-  background-image: url('../images/paw_icon_2.jpg');
+  background-image: url('../images/paw_work_2.png');
 
 }
 
@@ -84,10 +84,14 @@ form{
 
 /* splash page*/
 .bigPaw{
+  /* opacity: 0.2; */
+  /* filter: alpha(opacity=50); */
+
   margin: 20x;
   padding: 20px;
+
   position: fixed;
-  background-image: url(../images/paw_icon_big.svg);
+  /* background-image: url(../images/paw_icon_big.svg); */
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
@@ -101,12 +105,12 @@ form{
 
 /*about page*/
 .aboutBorder{
-    font-style: 20px white;
+    /* font-style: 20px white; */
 
     outline: 1px solid rgb(87, 181, 87);
     border: 7px solid white;
 
-    background: rgb(87, 181, 87);
+    /* background: rgb(87, 181, 87); */
     margin: 10px 5px 10px 5px;
     padding: 10px 5px 10px 5px;
 
