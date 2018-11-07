@@ -28,7 +28,8 @@ h2{
 }*/
 
 .menuButton{
-  border: solid 2px red;
+  /* border: solid 2px red; */
+  font-size: 20px;
 
 
 }
@@ -39,19 +40,19 @@ h2{
 
 
 #indexpage .subnavigation li:nth-child(1){
-  background-color: yellow;
+  background-color: rgba(245, 245, 255, 1);
 
 }
 #portfoliopage .subnavigation li:nth-child(2){
-  background-color: yellow;
+  background-color: rgba(245, 245, 255, 1);
 
 }
 #aboutpage .subnavigation li:nth-child(3){
-  background-color: yellow;
+  background-color: rgba(245, 245, 255, 1);
 
 }
 #contactpage .subnavigation li:nth-child(4){
-  background-color: yellow;
+  background-color: rgba(245, 245, 255, 1);
 
 }
 
@@ -64,10 +65,14 @@ h2{
   /*margin: 10px;*/
 }
 
+.intro_slider{
+  margin-left: 16px;
+}
+
 body{
   /*background: repeating-linear-gradient(red, yellow 10%, green 20%);*/
   font-family: 'Roboto', 'Arial', sans-serif;
-  background-image: url('../images/paw_work_2.png');
+  background-image: url('../images/paw_7.png');
 
 }
 
@@ -100,20 +105,26 @@ form{
 
 /*index page*/
 .introText{
-  font-style: 20px;
+  font-size: 20px;
+  margin-top: 2em;
+  margin-left: 32px;
 }
 
 /*about page*/
 .aboutBorder{
     /* font-style: 20px white; */
 
-    outline: 1px solid rgb(87, 181, 87);
-    border: 7px solid white;
+    /* outline: 1px solid rgb(87, 181, 87); */
+    /* border: 7px solid white; */
 
     /* background: rgb(87, 181, 87); */
     margin: 10px 5px 10px 5px;
     padding: 10px 5px 10px 5px;
+}
 
+.aboutText{
+    font-size: 20px;
+    /* margin-right: 120px; */
 }
 
 /*portfolio page*/
