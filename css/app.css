@@ -76,6 +76,13 @@ h2{
   padding-top: 40px;
 
 }
+
+/* dogs */
+.dogPhoto{
+  padding-top: 40px;
+  /* transform: rotate(90deg); */
+}
+
 /*nav{
   border: 1px solid red;
 }*/
