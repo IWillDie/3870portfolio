@@ -10,19 +10,72 @@ h2{
   font-family: 'Roboto';
 }
 /*target-boxing*/
-/*div{
+/* div{
   border: 1px solid red;
-}*/
+} */
 
 /*logo*/
-#logo1{
 
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.TheLogo{
+
+}
+
+#logo1{
+  margin-left: 10%;
+  height: 100px;
+
 }
 /*logo end*/
 
+/* Formatting */
+/* in particular the head */
+/* Overhaul 12-5-2018 */
+.WhoAmI{
+
+  margin:auto;
+
+}
+.grid-container{
+  /* margin-top: 50px; */
+}
+.txtwhite, h1, h2, h3, h4, p{
+  color: #F2F2F2;
+}
+.whereAreYou{
+    font-size: 40px;
+}
+
+/* End Formatting */
+
+/* index page */
+.comingSoon{
+     outline: 20px solid #cc00cc;
+    outline-offset: -20px;
+}
+
+/* portfolio page */
+.thumbz{
+  padding-top: 20px;
+}
+.txtThumb{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.txtDesc{
+  margin-top: 10px;
+  /* text-align: center; */
+  font-size: 30px;
+
+}
+.hlHover{
+  color: #cc00cc;
+}
+
+.portfolioSpacing{
+  padding-top: 40px;
+
+}
 /*nav{
   border: 1px solid red;
 }*/
@@ -30,6 +83,8 @@ h2{
 .menuButton{
   /* border: solid 2px red; */
   font-size: 20px;
+  margin-top: 10px;
+
 
 
 }
@@ -56,10 +111,10 @@ h2{
 
 }
 
-.target{
+/* .target{
   color: blue;
   font-style: red;
-}
+} */
 
 .orbit-slide{
   /*margin: 10px;*/
@@ -72,7 +127,10 @@ h2{
 body{
   /*background: repeating-linear-gradient(red, yellow 10%, green 20%);*/
   font-family: 'Roboto', 'Arial', sans-serif;
-  background-image: url('../images/paw_7.png');
+  /* background-image: url('../images/paw_7.png'); */
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
 }
 
