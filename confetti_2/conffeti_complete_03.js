@@ -141,7 +141,7 @@ function draw() {
       text('Instructions', width*0.2, height/2 - 250);
       fill(130);
       textSize(50);
-      text('"WAD" Keys for bursts', width*0.2+50, height/2 - 150);
+      text('"W, A, D" Keys for bursts', width*0.2+50, height/2 - 150);
       text('"LEFT CLICK" to create', width*0.2+50, height/2 - 75);
       text('Other Keys to stop', width*0.2+75, height/2);
       text('"SPACEBAR" to reset', width*0.2+50, height/2+75 );
