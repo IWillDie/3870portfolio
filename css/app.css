@@ -213,3 +213,16 @@ form{
   padding: 10px 10px 10px 10px;
 
 }
+
+/*10-18-2019
+Senior Project Implementation
+*/
+
+.bookletfixL{
+  margin-right: -12.5px;
+
+}
+
+.bookletfixR{
+  margin-left: -12.5px;
+}
