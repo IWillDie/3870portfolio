@@ -5,8 +5,10 @@ MM621
 Project 3
 */
 
-//this code works to averaging speeds
+//this code does not work for rotating the squares
 
+
+//global variables
 var speedData;
 var train1min, train2min, train3min;
 var url;
@@ -15,6 +17,8 @@ var counter;
 var speedArray = [];
 var count0,count20,count40,count60,count80;
 var xpos,ypos,size1;
+
+
 
 function setup(){
 //put setup code here
@@ -29,6 +33,7 @@ background(0);
 fill(255);
 textSize(60);
 
+//initialize variables as numbers
 totalSpeed = 0;
 averageSpeed = 0;
 count0 = 0;
@@ -36,17 +41,21 @@ count20 = 0;
 count40 = 0;
 count60 = 0;
 count80 = 0;
-if (speedData){
-ypos = windowHeight/2;
-xpos = windowWidth/2;
-size1 = count0;
-}
+
+//leftover code for making diamonds from triangles
+// if (speedData){
+// ypos = windowHeight/2;
+// xpos = windowWidth/2;
+// size1 = count0;
+// }
 }
 
+//get the api
 function getSpeeds(){
   loadJSON(url, gotData);
 }
 
+//make data useable
 function gotData(data){
   speedData=data;
 }
@@ -57,10 +66,12 @@ function draw(){
 
 if (speedData){
   buildSpeed();
-  counter2 = int(speedData[0].speed)
+  // counter2 = int(speedData[0].speed)
 //   print("speedData[0] is "+ counter2);
 //   print("second speed: " + speedData[1].speed);
 
+
+//draws the squares/diamonds
 drawDiamonds();
 
 
@@ -73,10 +84,11 @@ translate(width / 2, height / 2);
 rotate(PI / 3.0);
 rect(-26, -26, 52, 52);
 
+//another test square
 fill(0,200,0);
 translate(width / 2, height / 2);
 rotate(PI / 3.0);
-sq(300, 300, 300);
+square(300, 300, 300);
 
 
 
@@ -84,11 +96,14 @@ sq(300, 300, 300);
 
 
 }
+
+//mousePressed is unused
 function mousePressed(){
   //define the button and then call getBart()
 
 }
 
+//creates speed arrays and calculations
 function buildSpeed(){
 
 
@@ -100,7 +115,7 @@ print("total speed " + totalSpeed);
     if (speedData){
     totalSpeed += float(speedData[i].speed);
 
-    //sort
+    //sort speeds into bins relative to speed
     if (speedData[i].speed>=0 && speedData[i].speed<20){
       count0++;
     }
@@ -146,6 +161,8 @@ print("total speed " + totalSpeed);
 
   }
 
+
+//draws the squares/diamonds
   function drawDiamonds(xpos,ypos,size){
     // translate(width / 2, height / 2);
     rotate(PI*0.25);
@@ -184,6 +201,7 @@ print("total speed " + totalSpeed);
     noLoop();
   }
 
-  function windowResized() {
+//resizes canvas if changed
+function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
