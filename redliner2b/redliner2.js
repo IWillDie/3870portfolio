@@ -19,6 +19,7 @@ var speedArray = [];
 var count0,count10,count20,count30,count40,count50,count60,count70,count80,count90;
 var xpos,ypos,size1;
 var divisions;
+var textOffset;
 
 
 
@@ -51,6 +52,7 @@ count80 = 0;
 divisions = 10;
 amp1 = 2;
 
+textOffset = 250;
 
 }
 
@@ -209,7 +211,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('0-10 mph',200,0);
+        text('0-10 mph',textOffset,0);
     	pop();
 
       push();
@@ -224,7 +226,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('10 mph',200,0);
+        text('10 mph',textOffset,0);
     	pop();
 
       push();
@@ -239,7 +241,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('20 mph',200,0);
+        text('20 mph',textOffset,0);
     	pop();
 
       push();
@@ -254,7 +256,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('30 mph',200,0);
+        text('30 mph',textOffset,0);
     	pop();
 
       push();
@@ -269,7 +271,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('40 mph',200,0);
+        text('40 mph',textOffset,0);
     	pop();
 
       push();
@@ -284,7 +286,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('50 mph',200,0);
+        text('50 mph',textOffset,0);
       pop();
 
       push();
@@ -299,7 +301,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('60 mph',200,0);
+        text('60 mph',textOffset,0);
       pop();
 
       push();
@@ -314,7 +316,7 @@ print("total speed " + totalSpeed);
         textSize(20);
          fill('rgba(200,200,255)');
           // rotate(PI);
-          text('70 mph',200,0);
+          text('70 mph',textOffset,0);
       pop();
 
       push();
@@ -329,7 +331,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,200,255)');
         // rotate(PI);
-        text('80 mph',200,0);
+        text('80 mph',textOffset,0);
       pop();
 
       push();
@@ -344,7 +346,7 @@ print("total speed " + totalSpeed);
         textSize(20);
         fill('rgba(200,255,200)');
 
-        text('90+ mph',200,0);
+        text('90+ mph',textOffset,0);
       pop();
 
 
