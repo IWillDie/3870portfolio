@@ -6,17 +6,17 @@ Project 3
 */
 
 ///////////////
-/*ripping examples for the wheel*/
+/*redo the wheel*/
 //////////////
 
 //global variables
 var speedData;
-
+var amp1;
 var url;
 var totalSpeed, averageSpeed;
 var counter;
 var speedArray = [];
-var count0,count20,count40,count60,count80;
+var count0,count10,count20,count30,count40,count50,count60,count70,count80,count90;
 var xpos,ypos,size1;
 var divisions;
 
@@ -39,12 +39,17 @@ textSize(60);
 totalSpeed = 0;
 averageSpeed = 0;
 count0 = 0;
+count10 = 0;
 count20 = 0;
+count30 = 0;
 count40 = 0;
+count50 = 0;
 count60 = 0;
+count70 = 0;
 count80 = 0;
 
 divisions = 10;
+amp1 = 2;
 
 }
 
@@ -65,14 +70,14 @@ function draw(){
   rect(windowWidth/2,windowHeight/2,windowWidth*2,windowHeight*2);
   //parse the speedData json to get the minutes of first train
 
-  
+
 
 if (speedData){
 
   print("speedData loaded");
   buildSpeed();
   fill('rgb(2,255,2)');
-  circle(0,0,200);
+  circle(0,0,100);
 
 
 //draws the squares/diamonds
@@ -103,25 +108,40 @@ print("total speed " + totalSpeed);
     totalSpeed += float(speedData[i].speed);
 
     //sort speeds into bins relative to speed
-    if (speedData[i].speed>=0 && speedData[i].speed<20){
+    if (speedData[i].speed>=0 && speedData[i].speed<10){
       count0++;
     }
-    if (speedData[i].speed>=20 && speedData[i].speed<40){
+    if (speedData[i].speed>=10 && speedData[i].speed<20){
+      count10++;
+    }
+    if (speedData[i].speed>=20 && speedData[i].speed<30){
       count20++;
     }
-    if (speedData[i].speed>=40 && speedData[i].speed<60){
+    if (speedData[i].speed>=30 && speedData[i].speed<40){
+      count30++;
+    }
+    if (speedData[i].speed>=40 && speedData[i].speed<50){
       count40++;
     }
-    if (speedData[i].speed>=60 && speedData[i].speed<80){
-      count60++;
+    if (speedData[i].speed>=50 && speedData[i].speed<60){
+      count50++;
     }
-    if (speedData[i].speed>=80){
+    if (speedData[i].speed>=60 && speedData[i].speed<70){
+      count70++;
+    }
+    if (speedData[i].speed>=70 && speedData[i].speed<80){
+      count70++;
+    }
+    if (speedData[i].speed>=80 && speedData[i].speed<90){
       count80++;
     }
+    if (speedData[i].speed>=90){
+      count90++;
+    }
 
 
 
-    selectRange();
+    showRange();
     speedArray.push(speedData[i].speed);
       }
     }
@@ -144,7 +164,8 @@ print("total speed " + totalSpeed);
   }
 
   //sort children into personal arrays
-  function selectRange(){
+  function showRange(){
+    print('count40 ' + count40);
 
 
   }
@@ -156,7 +177,7 @@ print("total speed " + totalSpeed);
 
     translate(windowWidth/2,windowHeight/2);
 
-    for (i=0;i<divisions;i++) {
+
 
       noStroke();
       print("positions are " + xpos + ", "+ypos);
@@ -166,14 +187,118 @@ print("total speed " + totalSpeed);
       push();
       fill('rgba(255,0,0,0.50)');
       let parsefix = 70/100;
-      let multy1 = 20;
-      let multx1 = int(count+ i*10) *5;
+      let multy1 = 10;
+      let multx1 = count0 *amp1;
       //count0, count20
       rotate(PI*75/100);
-    		rotate(TWO_PI*i *parsefix / divisions);
+    		rotate(TWO_PI*1 *parsefix / divisions);
     		rect(200, 0, multx1, multy1);
+        textSize(20);
+        fill('rgba(255)');
+        text('0-10 mph',200,0);
     	pop();
-    }
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx2 = count10 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+    		rotate(TWO_PI*2 *parsefix / divisions);
+    		rect(200, 0, multx2, multy1);
+    	pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx3 = count20 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+    		rotate(TWO_PI*3 *parsefix / divisions);
+    		rect(200, 0, multx3, multy1);
+    	pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx4 = count30 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+    		rotate(TWO_PI*4 *parsefix / divisions);
+    		rect(200, 0, multx4, multy1);
+    	pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx5 = count40 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+    		rotate(TWO_PI*5 *parsefix / divisions);
+    		rect(200, 0, multx5, multy1);
+    	pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx6 = count50 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+        rotate(TWO_PI*6 *parsefix / divisions);
+        rect(200, 0, multx6, multy1);
+      pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx7 = count60 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+        rotate(TWO_PI*7 *parsefix / divisions);
+        rect(200, 0, multx7, multy1);
+      pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx8 = count70 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+        rotate(TWO_PI*8 *parsefix / divisions);
+        rect(200, 0, multx8, multy1);
+      pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx9 = count80 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+        rotate(TWO_PI*9 *parsefix / divisions);
+        rect(200, 0, multx9, multy1);
+      pop();
+
+      push();
+      fill('rgba(255,0,0,0.50)');
+      // let parsefix = 70/100;
+      // let multy1 = 20;
+      let multx10 = count90 *amp1;
+      //count0, count20
+      rotate(PI*75/100);
+        rotate(TWO_PI*10 *parsefix / divisions);
+        rect(200, 0, multx10, multy1);
+        textSize(20);
+        fill('rgba(255)');
+        text('90+ mph',200,0);
+      pop();
 
 
     noLoop();
