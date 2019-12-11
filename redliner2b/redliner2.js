@@ -51,6 +51,7 @@ count80 = 0;
 divisions = 10;
 amp1 = 2;
 
+
 }
 
 //get the api
@@ -71,13 +72,25 @@ function draw(){
   //parse the speedData json to get the minutes of first train
 
 
+  // fill('rgb(2,255,2)');
+  // // circle(0,0,100);
+  //
+  // textAlign(BASELINE);
+  // textSize(30);
+  // text('Data Loaded',0,30);
+  // pop();
 
 if (speedData){
 
   print("speedData loaded");
   buildSpeed();
   fill('rgb(2,255,2)');
-  circle(0,0,100);
+  // circle(0,0,100);
+  push();
+  textAlign(RIGHT);
+  textSize(30);
+  text('Data Loaded',170,30);
+  pop();
 
 
 //draws the squares/diamonds
@@ -194,7 +207,7 @@ print("total speed " + totalSpeed);
     		rotate(TWO_PI*1 *parsefix / divisions);
     		rect(200, 0, multx1, multy1);
         textSize(20);
-        fill('rgba(255)');
+        fill('rgba(200,200,255)');
         // rotate(PI);
         text('0-10 mph',200,0);
     	pop();
@@ -208,6 +221,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
     		rotate(TWO_PI*2 *parsefix / divisions);
     		rect(200, 0, multx2, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('10 mph',200,0);
     	pop();
 
       push();
@@ -219,6 +236,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
     		rotate(TWO_PI*3 *parsefix / divisions);
     		rect(200, 0, multx3, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('20 mph',200,0);
     	pop();
 
       push();
@@ -230,6 +251,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
     		rotate(TWO_PI*4 *parsefix / divisions);
     		rect(200, 0, multx4, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('30 mph',200,0);
     	pop();
 
       push();
@@ -241,6 +266,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
     		rotate(TWO_PI*5 *parsefix / divisions);
     		rect(200, 0, multx5, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('40 mph',200,0);
     	pop();
 
       push();
@@ -252,6 +281,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
         rotate(TWO_PI*6 *parsefix / divisions);
         rect(200, 0, multx6, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('50 mph',200,0);
       pop();
 
       push();
@@ -263,6 +296,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
         rotate(TWO_PI*7 *parsefix / divisions);
         rect(200, 0, multx7, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('60 mph',200,0);
       pop();
 
       push();
@@ -274,6 +311,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
         rotate(TWO_PI*8 *parsefix / divisions);
         rect(200, 0, multx8, multy1);
+        textSize(20);
+         fill('rgba(200,200,255)');
+          // rotate(PI);
+          text('70 mph',200,0);
       pop();
 
       push();
@@ -285,6 +326,10 @@ print("total speed " + totalSpeed);
       rotate(PI*75/100);
         rotate(TWO_PI*9 *parsefix / divisions);
         rect(200, 0, multx9, multy1);
+        textSize(20);
+        fill('rgba(200,200,255)');
+        // rotate(PI);
+        text('80 mph',200,0);
       pop();
 
       push();
@@ -297,7 +342,7 @@ print("total speed " + totalSpeed);
         rotate(TWO_PI*10 *parsefix / divisions);
         rect(200, 0, multx10, multy1);
         textSize(20);
-        fill('rgba(255)');
+        fill('rgba(200,255,200)');
 
         text('90+ mph',200,0);
       pop();
