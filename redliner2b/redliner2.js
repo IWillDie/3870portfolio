@@ -195,6 +195,7 @@ print("total speed " + totalSpeed);
     		rect(200, 0, multx1, multy1);
         textSize(20);
         fill('rgba(255)');
+        // rotate(PI);
         text('0-10 mph',200,0);
     	pop();
 
@@ -297,6 +298,7 @@ print("total speed " + totalSpeed);
         rect(200, 0, multx10, multy1);
         textSize(20);
         fill('rgba(255)');
+
         text('90+ mph',200,0);
       pop();
 
