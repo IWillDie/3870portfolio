@@ -20,30 +20,7 @@ var count0,count10,count20,count30,count40,count50,count60,count70,count80,count
 var xpos,ypos,size1;
 var divisions;
 var textOffset;
-var	speeds0	=	[];
-var	speeds1	=	[];
-var	speeds2	=	[];
-var	speeds3	=	[];
-var	speeds4	=	[];
-var	speeds5	=	[];
-var	speeds6	=	[];
-var	speeds7	=	[];
-var	speeds8	=	[];
-var	speeds9	=	[];
-var	speeds10	=	[];
-var	tt0	=	[];
-var	tt1	=	[];
-var	tt2	=	[];
-var	tt3	=	[];
-var	tt4	=	[];
-var	tt5	=	[];
-var	tt6	=	[];
-var	tt7	=	[];
-var	tt8	=	[];
-var	tt9	=	[];
-var	tt10	=	[];
 
-var lineColor;
 
 
 function setup(){
@@ -76,8 +53,6 @@ divisions = 10;
 amp1 = 2;
 
 textOffset = 250;
-lineColor = color(255,0,255,0.5);
-
 
 }
 
@@ -150,53 +125,33 @@ print("total speed " + totalSpeed);
     //sort speeds into bins relative to speed
     if (speedData[i].speed>=0 && speedData[i].speed<10){
       count0++;
-      append(speeds0,speedData[i].speed);
-      append(tt0,speedData[i].travel_time);
     }
     if (speedData[i].speed>=10 && speedData[i].speed<20){
       count10++;
-      append(speeds1,speedData[i].speed);
-      append(tt1,speedData[i].travel_time);
     }
     if (speedData[i].speed>=20 && speedData[i].speed<30){
       count20++;
-      append(speeds2,speedData[i].speed);
-      append(tt2,speedData[i].travel_time);
     }
     if (speedData[i].speed>=30 && speedData[i].speed<40){
       count30++;
-      append(speeds3,speedData[i].speed);
-      append(tt3,speedData[i].travel_time);
     }
     if (speedData[i].speed>=40 && speedData[i].speed<50){
       count40++;
-      append(speeds4,speedData[i].speed);
-      append(tt4,speedData[i].travel_time);
     }
     if (speedData[i].speed>=50 && speedData[i].speed<60){
       count50++;
-      append(speeds5,speedData[i].speed);
-      append(tt5,speedData[i].travel_time);
     }
     if (speedData[i].speed>=60 && speedData[i].speed<70){
       count70++;
-      append(speeds6,speedData[i].speed);
-      append(tt6,speedData[i].travel_time);
     }
     if (speedData[i].speed>=70 && speedData[i].speed<80){
       count70++;
-      append(speeds7,speedData[i].speed);
-      append(tt7,speedData[i].travel_time);
     }
     if (speedData[i].speed>=80 && speedData[i].speed<90){
       count80++;
-      append(speeds8,speedData[i].speed);
-      append(tt8,speedData[i].travel_time);
     }
     if (speedData[i].speed>=90){
       count90++;
-      append(speeds2,speedData[i].speed);
-      append(tt9,speedData[i].travel_time);
     }
 
 
@@ -245,13 +200,10 @@ print("total speed " + totalSpeed);
 
       //makes the meter
       push();
-      lineColor1 = color(255*tt0avg/60,0,255,0.5);
-      fill(lineColor1);
-      print(lineColor1);
+      fill('rgba(255,0,0,0.50)');
       let parsefix = 70/100;
       let multy1 = 10;
       let multx1 = count0 *amp1;
-      fill(lineColor1);
       //count0, count20
       rotate(PI*75/100);
     		rotate(TWO_PI*1 *parsefix / divisions);
@@ -263,9 +215,6 @@ print("total speed " + totalSpeed);
     	pop();
 
       push();
-      lineColor2 = color(255*count10/1000,0,255,0.5);
-      fill(lineColor2);
-      print(lineColor2);
       fill('rgba(255,0,0,0.50)');
       // let parsefix = 70/100;
       // let multy1 = 20;
@@ -311,10 +260,7 @@ print("total speed " + totalSpeed);
     	pop();
 
       push();
-      lineColor4 = color(255*count40/1000,0,255,127.5);
-      fill(lineColor4);
-      print(lineColor4);
-      fill(lineColor4);
+      fill('rgba(255,0,0,0.50)');
       // let parsefix = 70/100;
       // let multy1 = 20;
       let multx5 = count40 *amp1;
@@ -404,7 +350,6 @@ print("total speed " + totalSpeed);
       pop();
 
 
-      print(speeds0);
     noLoop();
   }
 
